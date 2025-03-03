@@ -93,8 +93,11 @@
 
 #### The document Object
 - javascript를 사용하는 이유, HTML과 상호작용을 위함.
-	- 즉, HTML의 element를 javascript를 통해 변경/읽을 수 있다.
-- 
+- ==즉, HTML의 element를 javascript를 통해 읽고, 변경할 수도 있다.==
+- console에서 <u>onsole.dir(document)를 실행하면 document(javascript관점)으로 HTML을 보여준다.</u>
+	- 즉, HTML의 title을 javascript로 가져올 수 있다.
+		- document.title
+- <u>HTML과 javascript를 연결하기 위한 모든 설정은 이미 준비되어 있음.</u>(이미 연결됨.)
 
 
 
