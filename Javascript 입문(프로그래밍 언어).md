@@ -92,6 +92,8 @@
 ## Javascript on the browser
 
 #### The document Object
+- javascript를 사용하는 이유, HTML과 상호작용을 위함.
+	- 즉, HTML의 element를 javascript를 통해 변경/읽을 수 있다.
 - 
 
 
