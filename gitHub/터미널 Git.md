@@ -1,6 +1,8 @@
-## 터미널에서 git을 사용하지 말고 git desktop이용.
-##### 초기화 git init
+#### 터미널에서 git을 사용하지 말고 git desktop이용.
 
+
+##### 초기화방법
+- git init
 ##### 사용자 정보설정
 - git config --global user.name "내이름"
 - git config --global user.email "you@example.com"
