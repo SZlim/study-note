@@ -137,6 +137,7 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- 특정 event를 listen할때 사용, 어떤 event를 listen할 것인가 정의해 줘야함.
 	- HTML의 element를 호출하고, addEventListner를 호출, listen하고 싶은 event이름을 알려줌, event가 발생하면 호출할 function을 전달해 사용.
 		- ex) title.addEventListener("click", handleTitleClick);
+			- ex) title.onclick = handleTitleClick; 으로도 사용가능(동일한 기능, 단 선호하지 않음.)
 
 - console.dir()로 호출된 element의 속성중 'on'으로 시작하는 속성(property)가 해당 element가 사용할 수 있는 eventListener이다.
 	- javascript문서로 작성할 때에는 'on'은 탈락시킨다.
