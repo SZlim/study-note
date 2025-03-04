@@ -94,6 +94,7 @@
 
 document에서 항목을 가져온다.
 documnet 항목들을 변경한다.
+HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서에 import해야 한다.
 
 #### The document Object
 - javascript를 사용하는 이유, HTML과 상호작용을 위함.
@@ -113,7 +114,22 @@ documnet 항목들을 변경한다.
 
 #### Searching for Elements
 - HTML에 정의된 id는 JavaScript에서도 같아야 함.
+- 많은 element를 한번에 가져와야 하는 경우
+	- document.getElementsByClassName()을 사용한다.
+	- 단, <u>호출된 object가 array이면, 다른 무엇을 할 수 없다.</u>
+- 테그이름으로 호출document.getElementsByTagname()
+- 😀==querySelector()==
+	- element를 css방식으로 검색할 수 있게 해줌.
+		- ex)querySelector(".hello h1");
+	- ==CSS selector를 사용하여 검색도 가능함.==
+		- ex) h1:first-child
+	- 단 하나의 element를 return해준다.
+	- ==하나의 class안에 동일한 tag가 많이 있다면, 첫번째 element만 return한다.==
+- 😀==querySelectorAll()==
+	- selector안의 조건에 부합하는 모든 element를 array로 return한다.
 
+#### Events
+- 
 
 
 
