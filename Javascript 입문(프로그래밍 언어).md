@@ -80,9 +80,10 @@
 	- ex) if(){}
 - else - if, else if의 ==조건이 false일 경우 작동.== 위 조건이 true일 경우 작동하지 않음. else는 선택적 사항임.
 	- ex) if(){} else{}
+- ==else if== - if가 false일때, 한가지 condition(조건)을 더 사용하게 해줌. (<u>코드 실행 순서를 잘 생각해야 함.</u>작동하지 않을 수도 있기 때문..)
 - ==동시에 두가지 condition을 확인할 수도 있다.== 조건을 연결해줄 연산자가 필요함.
 - 많은 condition(조건)을 연결할 수 있다.
-- ==else if== - if가 false일때, 한가지 condition(조건)을 더 사용하게 해줌. (<u>코드 실행 순서를 잘 생각해야 함.</u>작동하지 않을 수도 있기 때문..)
+
 - 연산자
 	- ==AND 연산자 - &&기호로 표시,== ==두 조건이 모두 true여야== 함을 javascript에 전달.  ==두 조건 모두 true일 경우,true. ==하나라도 flase일 경우, 결과도 false.
 	- ==OR 연산자 - ||기호로 표시, 두 조건 중 하나만 true인지== 확인해 javascript에 전달. ==하나의 조건만 true이면 결과는 true.== 단, 🤩==두 조건 모두 false인 경우만, false.==
@@ -94,10 +95,19 @@
 #### The document Object
 - javascript를 사용하는 이유, HTML과 상호작용을 위함.
 - ==즉, HTML의 element를 javascript를 통해 읽고, 변경할 수도 있다.==
+	- javascript는 HTML element를 가져오지만, HTML자체를 보여주지는 않음(object를 보여줌.)
 - console에서 <u>onsole.dir(document)를 실행하면 document(javascript관점)으로 HTML을 보여준다.</u>
 	- 즉, HTML의 title을 javascript로 가져올 수 있다.
 		- document.title
 - <u>HTML과 javascript를 연결하기 위한 모든 설정은 이미 준비되어 있음.</u>(이미 연결됨.)
+	- 무수히 많은 기능들이 이미 준비됨.
+- HTML의 id를 가진 tag를 console에서 가져오는 방법
+	- document.getElementbyId(), vscode에서 저장 후 브라우저를 새로고침해야 적용됨.
+- autofocus
+
+
+
+
 
 
 
@@ -108,7 +118,7 @@
 - ==parseInt()== - ==string을 number로 바꿔준다==. ==숫자와 숫자가 아닌 것을 구별 해 준다.==(NaN인지 확인가능)
 	string일 경우, 숫자와 크기를 비교할 수 없다.
 - typeOf - variable의 type을 알려줌.(string, number..)
-	ex) console.log(typeOf age);
+	- ex) console.log(typeOf age);
 
 
 
