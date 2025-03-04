@@ -129,7 +129,16 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- selector안의 조건에 부합하는 모든 element를 array로 return한다.
 
 #### Events
-- 
+[MDN 문서 참고](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+- JavaScript를 통한 대부분의 작업은, event를 listen하는 것이다.
+- Event 발생 시 javascript에 fucntion을 넘겨주고, javascript가 우리 대신 실행시켜 주는 것이 최종 목표.
+- ==eventListener()==
+	- 특정 event를 listen할때 사용, 어떤 event를 listen할 것인가 정의해 줘야함.
+	- HTML의 element를 호출하고, addEventListner를 호출, listen하고 싶은 event이름을 알려줌, event가 발생하면 호출할 function을 전달해 사용.
+		- ex) title.addEventListener("click", handleTitleClick);
+
+- console.dir()로 호출된 element의 속성중 'on'으로 시작하는 속성(property)가 해당 element가 사용할 수 있는 eventListener이다.
+	- javascript문서로 작성할 때에는 'on'은 탈락시킨다.
 
 
 
