@@ -1,7 +1,8 @@
 ###### [[HTML 입문(문법등 참고용)]] 
 
 - javascript는 이미 웹브라우저에 설치되어 있다.
-- js코드와 css코드를 ==웹에서 실행하기 위해선 html이 필요==하다.(접착제역할)
+- js코드와 css코드를 ==웹에서 실행하기 위해선 HTML이 필요==하다.(접착제역할)
+	- 또, 대부분의 경우 style은 CSS통해서 변경하는 것이 좋다.
 - javascript는 사용자와의 상호작용을 위해 만들어 졌다.
 ## ==Javascript기본문법==
 - js파일은 주로 끝에서 작성한다.(위에서 부터 가져오지 않는다.), script src로 가져온다(클로징필요)
@@ -139,6 +140,9 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 
 - console.dir()로 호출된 element의 속성중 'on'으로 시작하는 속성(property)가 해당 element가 사용할 수 있는 eventListener이다.
 	- javascript문서로 작성할 때에는 'on'은 탈락시킨다.
+
+##### more Events
+- 
 
 
 
