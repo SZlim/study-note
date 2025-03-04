@@ -108,11 +108,11 @@ documnet 항목들을 변경한다.
 
 #### HTML in javaScript
 - HTML의 id를 가진 tag를 console에서 가져오는 방법
-	- document.getElementbyId(), vscode에서 저장 후 브라우저를 새로고침해야 적용됨.
+	- document.getElementById(), vscode에서 저장 후 브라우저를 새로고침해야 적용됨.
 - 상호, 어떻게 작동하는지 명확히 이해하는 것이 중요하다.
 
 #### Searching for Elements
-- 
+- HTML에 정의된 id는 JavaScript에서도 같아야 함.
 
 
 
