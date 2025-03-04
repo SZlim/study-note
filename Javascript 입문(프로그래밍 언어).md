@@ -92,19 +92,27 @@
 
 ## Javascript on the browser
 
+document에서 항목을 가져온다.
+documnet 항목들을 변경한다.
+
 #### The document Object
 - javascript를 사용하는 이유, HTML과 상호작용을 위함.
+	- HTML을 Javascript에서 읽어올수 있어야 함.
 - ==즉, HTML의 element를 javascript를 통해 읽고, 변경할 수도 있다.==
 	- javascript는 HTML element를 가져오지만, HTML자체를 보여주지는 않음(object를 보여줌.)
-- console에서 <u>onsole.dir(document)를 실행하면 document(javascript관점)으로 HTML을 보여준다.</u>
+- console에서 <u>console.dir(document)를 실행하면 document(javascript관점)으로 HTML을 보여준다.</u>
 	- 즉, HTML의 title을 javascript로 가져올 수 있다.
 		- document.title
 - <u>HTML과 javascript를 연결하기 위한 모든 설정은 이미 준비되어 있음.</u>(이미 연결됨.)
 	- 무수히 많은 기능들이 이미 준비됨.
+
+#### HTML in javaScript
 - HTML의 id를 가진 tag를 console에서 가져오는 방법
 	- document.getElementbyId(), vscode에서 저장 후 브라우저를 새로고침해야 적용됨.
-- autofocus
+- 상호, 어떻게 작동하는지 명확히 이해하는 것이 중요하다.
 
+#### Searching for Elements
+- 
 
 
 
