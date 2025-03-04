@@ -143,6 +143,13 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- javascript문서로 작성할 때에는 'on'은 탈락시킨다.
 
 ##### more Events
+- document
+	- .body, .head, .title 등 중요한 것만 존재, javascript로 호출해 변경할 수 있다.
+	- 기타 element는 querySelector나 getElementById 등으로 찾아서 호출해야 함.
+- window
+	- resize
+	- copy
+- wifi
 - 
 
 
