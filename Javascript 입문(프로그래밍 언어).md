@@ -149,7 +149,7 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 - window
 	- resize
 	- copy
-- wifi
+	- wifi - online, offline으로 wifi상태를 listen할 수 있음.
 - 
 
 
