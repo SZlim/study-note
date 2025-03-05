@@ -37,3 +37,10 @@ function handleTitleClick() {
 }
 h1.addEventListener("click", handleTitleClick);
 ```
+
+#### 예제4(search)
+```
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
+```
