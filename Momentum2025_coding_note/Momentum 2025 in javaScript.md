@@ -25,9 +25,13 @@
 		- 😁submit 역시, 엔터를 누르거나 버튼을 클릭할때 발생한다.
 		- form이 submit되고 브라우저가 새로고침하는 것은 브라우저의 기본동작이기 때문에, 기본 동작이 발생하지 않도록 해야함.
 		- ==eventlistener를 활용할때는 function을 바로 실행시키려고 하는 것이 아니다.==
+		- 또, addEventListener안에 있는 함수는 우리가 직접 실행하지 않는다.
+			- 브라우저가 실행해줌.
+			- event에 대한 정보도 담아줌.
 	- ==😎preventDefault() - form이 submit되는 기본 동작을 막기 위한 함수.==
 		- preventDefault 함수는 EventListener 함수의 '첫 번째 argument' 안에 있는 함수이다. 첫 arument는 지금 막 벌어진 event들에 대한 정보를 갖고 있다.  
 		- JS는(기본적으로)argument를 담아서 함수를 호출하는데, 이 argument가 기본 정보들을 제공하고 있다. 
 		- ex) 누가 submit주체인지, 몇 시에 submit을 했는지 등등 콘솔에 출력해보면 알 수 있음
-		- 😎form에서 발생한 submit event 관련 정보를 담을 용도로 onLoginSubmit 함수에 event라는 매개변수를 추가(관용적으로 event라고 사용. event는 정보를 담는 object)
+		- 😎form에서 발생한 submit event 관련 정보를 담을 용도로 onLoginSubmit 함수에 event라는 매개변수를 추가(관용적으로 event라고 사용. event는 정보를 담는 object) - event는 해당 함수의 eventListener함수의 첫번째 인자(arguement)로 주어진다., 우리는 공간만 만들고 받기만 하면됨.
 		- ex) function onLoginSubmit(event) {event.preventDefault();}
+	- event로부터 얻을 수 있는 다양한 정보가 존재함. 포인터 위치 등등 또, 다양한 event가 존재함.
