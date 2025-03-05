@@ -159,7 +159,10 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- 참고 [[JavaScript 예제모음#예제1 (CSS in javascript)#]]
 - CSS는 style 작업에 적합한 도구
 - javascript는 애니메이션에 적합한 도구
-- 
+- 개념(목표:javascript를 통해 CSS에 직접 전달하지 않기.)
+	- javascript => HTML, CSS looking HTML
+	- 더 적은 코드로 동일한 결과를 얻을 수 있음.
+	- 코드가 더 명확해 헷갈릴 요소가 감소.
 - 
 
 
