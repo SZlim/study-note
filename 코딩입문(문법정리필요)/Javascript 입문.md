@@ -157,6 +157,10 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- getter - const로 변수 선언
 	- setter - let으로 변수 선언
 	- 참고 [[JavaScript 예제모음#예제1 (CSS in javascript)#]]
+- CSS는 style 작업에 적합한 도구
+- javascript는 애니메이션에 적합한 도구
+- 
+- 
 
 
 
