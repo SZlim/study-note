@@ -163,7 +163,13 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 	- javascript => HTML, CSS looking HTML
 	- 더 적은 코드로 동일한 결과를 얻을 수 있음.
 	- 코드가 더 명확해 헷갈릴 요소가 감소.
-- 
+- 동일한 string을 연속해서 사용할 경우 error의 위험이 있다.
+	- 해당 raw string(css classname)은 <u>변수로 선언해 사용하면 error의 위험이 감소한다.</u>
+		- 즉 raw string이 반복되면 const(상수)로 만들어라.
+	- 변수명이 다르게 사용된 곳을 javascript가 알려준다.(기존의 raw stirng일 경우, 알림 발생하지 않음.)
+	- ==단, HTML에 class가 선언된 element의 경우, javascript가 기존을 무시하고, 새롭게 classname을 정의(교체)하는 상황이 발생한다.== (최초의 HTML의 className이 사라짐.)
+- classList - class들의 목록으로 작업할 수 있게 허용함.
+- className - 이전의 class는 상관하지 않고 교체
 
 
 
