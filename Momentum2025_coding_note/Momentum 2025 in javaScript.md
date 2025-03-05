@@ -19,3 +19,9 @@
 	- required
 	- maxlength
 	- 😎HTML 내 input의 유효성을 검사하기 위해서는 form안에 input이 존재해야 함.
+		- 단, form안에 input을 넣을 경우, 엔터를 입력할 때마다 form은 자동적으로 summit이 된다.(새로고침)
+		- ==form이 summit(새로고침)이 되는 것을 막아줘야 한다.==
+	- summit로 eventlistener로 감지할 수 있다.
+		- 😁summit 역시, 엔터를 누르거나 버튼을 클릭할때 발생한다.
+		- form이 summit되고 브라우저가 새로고침하는 것은 브라우저의 기본동작이기 때문에, 기본 동작이 발생하지 않도록 해야함.
+	- ==eventlistener를 활용할때는 function을 바로 실행시키려고 하는 것이 아니다.==
