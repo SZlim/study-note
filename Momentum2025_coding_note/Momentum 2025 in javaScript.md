@@ -25,7 +25,9 @@
 		- 😁summit 역시, 엔터를 누르거나 버튼을 클릭할때 발생한다.
 		- form이 summit되고 브라우저가 새로고침하는 것은 브라우저의 기본동작이기 때문에, 기본 동작이 발생하지 않도록 해야함.
 		- ==eventlistener를 활용할때는 function을 바로 실행시키려고 하는 것이 아니다.==
-	- preventDefault() - form이 summit되는 기본 동작을 막기 위한 함수.
+	- 😎preventDefault() - form이 summit되는 기본 동작을 막기 위한 함수.
 		- preventDefault 함수는 EventListener 함수의 '첫 번째 argument' 안에 있는 함수이다. 첫 arument는 지금 막 벌어진 event들에 대한 정보를 갖고 있다.  
 		- JS는(기본적으로)argument를 담아서 함수를 호출하는데, 이 argument가 기본 정보들을 제공하고 있다. 
 		- ex) 누가 submit주체인지, 몇 시에 submit을 했는지 등등 콘솔에 출력해보면 알 수 있음
+		- 😎form에서 발생한 submit event 관련 정보를 담을 용도로 onLoginSubmit 함수에 event라는 매개변수를 추가(관용적으로 event라고 사용. event는 정보를 담는 object)
+		- ex) function onLoginSummit(event) {event.preventDefault();}
