@@ -168,7 +168,7 @@ HTML과 javaScript가 상호작용을 하기 위해서는 반드시 HTML문서�
 		- 즉 raw string이 반복되면 const(상수)로 만들어라.
 	- 변수로 만들고 난 뒤, 변수명이 다르게 사용된 곳을 javascript가 알려준다.(기존의 raw stirng일 경우, 알림 발생하지 않음.)
 	- ==단, HTML에 class가 선언된 element의 경우, javascript가 기존을 무시하고, 새롭게 classname을 정의(교체)하는 상황이 발생한다.== (최초의 HTML의 className이 사라짐.)
-- ==classList ==- class들의 목록으로 작업할 수 있게 허용함.
+- 😎==classList ==- class들의 목록으로 작업할 수 있게 허용함.
 	- classList.contains() - 정의한 class가 HTML element의 class에 포함되어있는지 알려줌.
 		- remove()
 		- add()
