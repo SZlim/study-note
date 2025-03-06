@@ -35,3 +35,7 @@
 		- 😎form에서 발생한 submit event 관련 정보를 담을 용도로 onLoginSubmit 함수에 event라는 매개변수를 추가(관용적으로 event라고 사용. event는 정보를 담는 object) - event는 해당 함수의 eventListener함수의 첫번째 인자(arguement)로 주어진다., 우리는 공간만 만들고 받기만 하면됨.
 		- ex) function onLoginSubmit(event) {event.preventDefault();}
 	- event로부터 얻을 수 있는 다양한 정보가 존재함. 포인터 위치 등등 또, 다양한 event가 존재함.
+- Getting username
+	- user접속 후 (이름 제출 후), log in 시, form을 사라지게..
+		- CSS에 .hidden classname생성 => CSS를 통해 form을 숨긴다.
+		- 
