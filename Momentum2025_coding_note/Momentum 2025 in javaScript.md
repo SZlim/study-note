@@ -38,4 +38,40 @@
 - Getting username
 	- user접속 후 (이름 제출 후), log in 시, form을 사라지게..
 		- CSS에 .hidden classname생성 => CSS를 통해 form을 숨긴다.
-		- 
+			- hidden은 display:none;
+		- HTML에 h1을 추가, hidden으로 classname부여.
+			- 해당 class는 요소를 숨기는 역할을 함(form을 숨김.)
+			- h1요소는 존재하지만 숨겨져 있음.
+		- classList.add()/.remove()로 classname을 추가/삭제해 form을 숨겨준다.
+		- 😭즉, loginForm에 form과 h1 모두의 속성을 부여 후, 원하는 value(username)를 얻었을 때, form을 h1의 hidden class 작동, form을 숨기고(.add), h1에서는 hidden을 삭제(.remove)해 string을 화면에 표시함. 코드참고[[JavaScript 예제모음#예제4(getting username)]]
+	- ==string조합==
+		- "hello " + username - 방법1
+		- ==`hello ${username}` - 방법2($``$(백틱)안에 추가)==
+			- $``$(백틱)안에 string과 변수를 넣어 원하는 문구 출력 - 선호하는 방식
+				- 규칙1 - ${변수명}으로 string과 결함
+				- 규칙2 - ==반드시 $``$(백틱)으로 시작해야 함.==
+- Saving username
+	- localStorage (이미 브라우저에 존재함.), key와 value가 필요.
+		- 😎value저장 방법 - 자주 사용되는 방법, 가장 쉬운 방법
+		- .setItem - localStorage에 정보 저장
+		- .getItem - localStorage의 정보 호출
+		- .removeItem - localStorage의 정보 삭제
+- Loading username
+	- localStorage에 유저의 정보가 있을 경우 form을 보여주지 않고 h1을 보여주기 위한 코드 작성
+		- 유저정보가 없을 경우 form 
+		- 유저정보가 있을 경우 h1
+	- localStorage의 유저정보 확인법
+		- .getItem으로 유저정보 확인 가능
+		- ==유저정보가 없을 경우 null을 반환한다.==
+	- 😎조건문 완성을 위해, form과 h1모드 class = hidden으로 부여해, 숨겨주고 시작한다.
+	- 
+
+
+
+
+---
+#### Tip
+- 😍==string만 포함된 변수는 대문자로 변수명 표시==, string을 저장하고 싶을때 사용.(중요한 정보를 포함하지 않음.)
+- 😍==반복되는 string을 const로 고정시켜야 오류가 줄어듬(변수)==
+	- ==대문자 변수로 저장==, string이라는 사실을 기억하고 상기하기 좋음.
+	- string작성을 줄여야 생각하지 못한 오류도 줄어든다.
