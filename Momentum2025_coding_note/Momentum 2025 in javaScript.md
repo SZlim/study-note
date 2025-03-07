@@ -64,7 +64,8 @@
 		- .getItem으로 유저정보 확인 가능
 		- ==유저정보가 없을 경우 null을 반환한다.==
 	- 😎조건문 완성을 위해, form과 h1모드 class = hidden으로 부여해, 숨겨주고 시작한다.
-	- 
+	- localStorage에서 전달되는 username과, loginInput에서 전달되는 username은 다른 인자이다.
+		- 죽, paintGreeting함수의 username(localStorage로 부터), onLoginSubmit의 username(loginInput으로 부터)이 인자가 다름. 구분이 필요할 경우 구분해야 헷갈리지 않는다.
 
 
 
