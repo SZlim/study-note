@@ -37,7 +37,7 @@
 	- event로부터 얻을 수 있는 다양한 정보가 존재함. 포인터 위치 등등 또, 다양한 event가 존재함.
 - Getting username
 	- user접속 후 (이름 제출 후), log in 시, form을 사라지게..
-		- CSS에 .hidden classname생성 => CSS를 통해 form을 숨긴다.
+		- ==CSS에 .hidden classname생성== => CSS를 통해 form을 숨긴다.
 			- hidden은 display:none;
 		- HTML에 h1을 추가, hidden으로 classname부여.
 			- 해당 class는 요소를 숨기는 역할을 함(form을 숨김.)
