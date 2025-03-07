@@ -76,7 +76,7 @@
 #### intervals
 - clock을 만들기 위해서는 html에 h2를 생성, default값으로 00:00부여한다.
 - intervals - 매번 일어나는 무엇인가를 뜻함.
-	- ==setInterval()== - 특정 시간마다 어떤 함수의 호출을 실행함.
+	- 😎==setInterval()== - 특정 시간마다 어떤 함수의 호출을 실행함.
 		- javaScript에 내장되어 있음
 		- 두개의 argument를 받음
 			- 첫번째, 실행하고자 하는 function
@@ -87,8 +87,35 @@
 		- 첫번째, 실행하고자 하는 function
 		- 두번째, 호출되는 function의 간격, ms(milliseconds)
 - ==Date()==
-	- 
+	- ==new Date()== - 현재 날짜 및 시간 정보 생성, 동적인 시간을 표시(매번 최신 시간정보를 얻을 수 있음.)
+		- javaScript에 기본 기능
+	- date.getHours()
+	- date.getMinutes()
+	- date.getSeconds()
+	- 매 초마다 하고 있는 것은 날짜,시간,분, 초에 대한 정보를 가진 object를 매 초마다 생산하는 것.
+		- 이 반복작업이 시계처럼 보이게 하는 것.
+- 새로 고침 후 시간이 바로 보여지지 않음, 1초 후 생성
+	- 문제해결
+		- 😍시간함수 getClock()을 website가 load되자마자 즉시 실행하게 하고, interval을 실행
+		- 즉시 실행되기 때문에 1초 기다림이 없어진다.
+- 시계 화면 표시
+	- 😍innerText로 h2#clock에 표시
+	- ==innerText== - HTML 내부 텍스트 콘텐츠를 가져오거나 설정하는데 사용되는 속성,
 
+#### padStart
+- ==padStar()==는 ==string에 사용할 수 있는 function.==
+- padStar는 기존 string을 보다 길게 만들어야 할때 사용.
+	- 앞에 원하는 길이만큼 특정 글자를 채움.
+- 😍padStart()는 number 함수 안에는 사용할 수 없다.
+	- 즉, number를 text로 변경해야 한다.
+	- ==String()으로 감싸면 number가 string으로 변한다.==
+	- 사용법
+		- ex) "1".padStart(2, "0")
+		- 길이가 1인 문자를 문자열의 길이가 2가 되도록 해주고 "0"으로 앞을 채워줘라.
+		- 이미 길이가 2인 문자에서는 작동하지 않음.
+- padEnd(), padStrar()와 반대 개념
+	- padEnd는 기존 string을 보다 길게 만들어야 할때 사용.
+	- 뒤에 원하는 길이만큼 특정 글자를 채움.
 
 
 
@@ -99,3 +126,5 @@
 	- ==대문자 변수로 저장==, string이라는 사실을 기억하고 상기하기 좋음.
 	- string작성을 줄여야 생각하지 못한 오류도 줄어든다.
 - 반복되는 코드는 function으로 만들어 두면 편리하다.
+- 😎==특정 함수를 연결할때 $``$(백틱)을 사용해 연결한다==.
+	- ex) '`${a}:${b}`'
