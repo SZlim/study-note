@@ -1,7 +1,10 @@
 
 ###### 순서
 - HTML작성한 다음 HTML의 element를 가져와 javaScript로 작업한다.
-#### input Values
+
+### Login part
+
+- input Values
 - 😁tip: input과 button을 많이 사용할 경우, HTML에서 div안에 넣어, class로 만들자.
 - 😁console.dir()를 통해  input의 property를 찾아 볼 수 있다.
 - 😍HTML에서 element에 id를 부여한 경우, ==document.queryselector()에서 반드시"# + id명"을 입력해야, 해당 id를 javascript가 찾을 수 있다.==(반드시 '#'을 해야한다.)
@@ -68,7 +71,10 @@
 		- 죽, paintGreeting함수의 username(localStorage로 부터), onLoginSubmit의 username(loginInput으로 부터)이 인자가 다름. 구분이 필요할 경우 구분해야 헷갈리지 않는다.
 
 
+### Clock part
 
+#### intervals
+- 
 
 ---
 #### Tip
