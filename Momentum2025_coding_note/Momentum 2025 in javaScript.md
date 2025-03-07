@@ -74,7 +74,23 @@
 ### Clock part
 
 #### intervals
-- 
+- clock을 만들기 위해서는 html에 h2를 생성, default값으로 00:00부여한다.
+- intervals - 매번 일어나는 무엇인가를 뜻함.
+	- ==setInterval()== - 특정 시간마다 어떤 함수의 호출을 실행함.
+		- javaScript에 내장되어 있음
+		- 두개의 argument를 받음
+			- 첫번째, 실행하고자 하는 function
+			- 두번째, 호출되는 function의 간격, ms(milliseconds)
+#### Timeouts and Dates
+- ==setTimeout()== - 어떤 함수를 특정 시간 내 1번만 호출
+	- 두개의 aurgument를 받음
+		- 첫번째, 실행하고자 하는 function
+		- 두번째, 호출되는 function의 간격, ms(milliseconds)
+- ==Date()==
+	- 
+
+
+
 
 ---
 #### Tip
