@@ -152,7 +152,20 @@
 	- array.length()로 대체해 object 추가/삭제의 확인에 대한 번거로움을 줄인다.
 #### background
 - 목표: Math.radom()을 통해 background변경
-- 
+- array 생성, 반드시 폴더의 파일명과 동일한 명으로 입력한다.
+	- 폴더 안의 이미지 이름을 javaScript파일에서도 똑같이 씀.
+- quotes part에서 사용한 동일한 방법으로 img를 랜덤하게 호출
+	- math.floor()
+	- math.random() 
+	- array.length()
+- 😎==document.createElement()==
+	- HTML에 element를 추가하는 함수
+	- 추가된 element는 HTML에는 존재하지 않고 javaScript에만 존재함(추가작업 필요)
+	- 해당 element는 HTML에는 존재하지 않지만 속성을 부여하고 사용할 수 있다.
+		- ex) bgImage.src="img/"
+- 😎==document.body.appendChild()==
+	- document.createElement()를 통해 javaScript로 생성된 element를 HTML에 append하는 함수
+	- body에 javaScript로 생성된 HTML element를 추가해 사용.
 
 
 
