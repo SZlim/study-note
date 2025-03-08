@@ -62,3 +62,14 @@ function onLoginSubmit(event) {
 
 loginForm.addEventListener("submit", onLoginSubmit);
 ```
+
+#### 예제5(object array) - string object
+```
+let myArray = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Peter", age: 35 }
+];
+
+console.log(myArray[1].name); // "Jane"
+```
