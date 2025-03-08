@@ -117,6 +117,18 @@
 	- padEnd는 기존 string을 보다 길게 만들어야 할때 사용.
 	- 뒤에 원하는 길이만큼 특정 글자를 채움.
 
+### Quotes and background part
+
+#### Quotes
+- object의 array
+	- 변수안에 ([]), {}로 object를 감싼다.
+	- 각 object는({}의 내용) 콤마(,)로 구분한다.
+
+
+
+
+
+
 
 
 ---
