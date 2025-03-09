@@ -172,11 +172,43 @@
 	- appendChild와의 차이점은 prepend는 HTML의 가장 위에, appendChild는 HTML 가장 아래에 element를 생성한다.
 
 ### To do list part
-- setup - form(입력), list(나열)
-	- form
-	- ul
-
-
+- #### setup - form(입력), list(나열)
+	- form - HTML에 form생성 및 id부여
+		- ==input을 생성해 입력을 받을 준비를 함==
+			- 😍단, input은 ==required==를 해, 빈 todo list 생성을 방지 한다.
+		- todo리스트를 입력하는 부분
+	- ul - HTML에 ul생성 및 id부여
+		- todo리스트 목록을 나열하는 부분
+		- ul은 생성만 하고 나머지 나열에 관한 부분은 javaScript에서 이루어지게 코드생성
+	- form/ul Grab 
+		- HTML의 form과 ul을 javaScript로 불러오는 변수 생성
+			- getElementById()
+			- querySelector() - id는 ""안에 # 반드시 붙여줌.
+	- addEventListener(), event.preventDefault()
+		- addEvnetListener로 submit event를 감지하고, event.preventDefault()를 포함한 함수로 submit(새로고침)을 막는다.
+	- input value Grab
+		- toDOForm 내 input의 value를 얻기위해 toDoForm.querySelector를 사용(HTML 내 검색범위를 toDoForm으로 한정.)
+		- 😍document.querySelector("#todo-form input); 도 동일한 방법이다.(범위를 한정하지 않음)
+	- 😎empty input - enter입력 후 입력란을 비우는 작업이 필요함.
+		- value의 값을 ""(공란)으로 처리하면 입력과 동시에 입력란이 비워진다.
+		- 단,input을 비우기 전 저장하는 작업이 필요
+		- ==😎input의 현재 value를 새로운 변수에 복사해 value를 저장한다.==
+			- ex)const newToDo = toDoInput.value;
+		- ==변수를 생성함으로써 이후 value를 공란으로 두어도 새롭게 생성된 변수에는 아무런 영향이 없다.(저장됨)==
+		  
+- #### Adding ToDos
+	- 😎paintToDo() 함수 생성 - toDo를 그리는 역할을 담당.
+		- 개념, handleToDoSubmit()에서 paintToDo()를 호출하고, 호출에 사용한 값은 paintoToDo()에 전달(==value는 string==)
+		- newToDo의 값을 사용, 비워지기 전의 value(==value는 string==)
+	- paintToDo()의 역할은 list 생성에 사용될 예정
+		- 😎createElement()를 이용해 document 내 "li"를 생성해 준다.
+		- span을 사용해 li를 만든다. 삭제하는 button이 필요하기 때문,,
+			- 😎.createElement()를 통해 "span"을 document 내 생성.
+		- 😎생성된 span은 li에 넣어야함.
+			- appentChild()를 통해 li에 span을 appen함.
+		- 😍==span.innerText로 입력받은 newToDo의 value(value는string)를 span에 입력한다.==
+			- HTML화면에 보이게 함.
+	- javaScirpt에서 생성된 li(value를 가진)를 input에 .appenChild()로 li를 input에 append한다. 
 
 
 
