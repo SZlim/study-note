@@ -208,7 +208,21 @@
 			- appentChild()를 통해 li에 span을 appen함.
 		- 😍==span.innerText로 입력받은 newToDo의 value(value는string)를 span에 입력한다.==
 			- HTML화면에 보이게 함.
-	- javaScirpt에서 생성된 li(value를 가진)를 input에 .appenChild()로 li를 input에 append한다. 
+	- javaScirpt에서 생성된 li(value를 가진)를 input에 ==.appenChild()로 li를 input에 append한다. ==
+	  
+- #### Deleting To Dos
+	- doto list를 삭제할 버튼 생성은 javaScript에서 이루어 진다.
+	- 어떻게 보일지는 HTML상에서 디자인을 해보아야 한다.
+	- button을 event를 수신해야 한다.
+		- .createElement로 button을 생성
+		- buttn은 innerText로 X 표시
+		- .appendChild()로 li에 button을 append한다.
+			- append는 함수 내 제일 마지막에 위치해야 한다.
+	- 😎button이 click을 감지하기 위해 addEventListener()를 button에 추가한다.(click eventlistener)
+	- eventlistener로 click을 감지했을 때를 위한 함수를 생성.
+		- 삭제할 li를 알기 위해, event를 함수에 부여.(click event 정보)
+			- ex) function deleteToDo(event){}
+		- event정보 내 path를
 
 
 
@@ -223,3 +237,4 @@
 - 반복되는 코드는 function으로 만들어 두면 편리하다.
 - 😎==특정 함수를 연결할때 $``$(백틱)을 사용해 연결한다==.
 	- ex) '`${a}:${b}`'
+- #### ==append()는 맨 함수 내 맨 마지막에 놓아야 한다.==
