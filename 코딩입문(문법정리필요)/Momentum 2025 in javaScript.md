@@ -224,6 +224,8 @@
 			- ex) function deleteToDo(event){}
 		- event정보 내 path를 확인
 			- 🤩event 발생 후, consloe에서 ==event.compsedPath()를 통해 확인가능.==
+		- 😭event는 많은 정보가 있기에, evnet.target을 살펴봐야 한다.(?)
+		- 🤩li변수를 만들어 target을 parentElement(즉, li)해, li.remove();로 ToDo목록을 지울 수 있다.
 
 
 
