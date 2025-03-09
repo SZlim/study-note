@@ -147,6 +147,7 @@
 			- ceil() - 올림(소수점을 무조건 올림 ex) 1.1 = 2)
 			- ==floor()== - 내림(소수점을 무조건 내림 ex) 1.9 = 1)
 				- 참고: ==Math.floor을 붙이면 0부터 n-1까지 나오고,==  Math.ceil을 붙이면 1부터 n까지 나오고  Math.round를 붙이면 0부터 n까지 나옴
+			- 길이가 5인 array에서 마직막 element를 가져오려면 4가 필요하다. 0~4 == 5 와 같다.
 - ==array.length()==
 	- array 내 정해진 기존의 object이외에 추가나 삭제가 필요할 경우, (hard coding 비추천)
 	- array.length()로 대체해 object 추가/삭제의 확인에 대한 번거로움을 줄인다.
@@ -166,6 +167,14 @@
 - 😎==document.body.appendChild()==
 	- document.createElement()를 통해 javaScript로 생성된 element를 HTML에 append하는 함수
 	- body에 javaScript로 생성된 HTML element를 추가해 사용.
+- document.body.prepend()
+	- appendChild()와 동일한 역할을 하는 함수
+	- appendChild와의 차이점은 prepend는 HTML의 가장 위에, appendChild는 HTML 가장 아래에 element를 생성한다.
+
+### To do list part
+- setup - form(입력), list(나열)
+	- form
+	- ul
 
 
 
