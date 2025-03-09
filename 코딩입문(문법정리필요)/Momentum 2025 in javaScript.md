@@ -222,7 +222,8 @@
 	- eventlistener로 click을 감지했을 때를 위한 함수를 생성.
 		- 삭제할 li를 알기 위해, event를 함수에 부여.(click event 정보)
 			- ex) function deleteToDo(event){}
-		- event정보 내 path를
+		- event정보 내 path를 확인
+			- 🤩event 발생 후, consloe에서 ==event.compsedPath()를 통해 확인가능.==
 
 
 
