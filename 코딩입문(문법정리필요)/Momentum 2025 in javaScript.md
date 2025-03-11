@@ -227,6 +227,16 @@
 		- 😭event는 많은 정보가 있기에, evnet.target을 살펴봐야 한다.(?)
 		- 🤩li변수를 만들어 target을 parentElement(즉, li)해, li.remove();로 ToDo목록을 지울 수 있다.
 
+#### Saving ToDos
+
+- 브라우저에 input을 저장하는 방법
+	- ==localStorage()==
+- array를 만들어 todo가 입력될 때 마다, array에 push하는 방법으로 저장.
+	- newToDo를 그리기 전에 toDos array를 가지고 와서 newToDo에 push
+	- push()
+- ==단, localStorage에는 array를 저장할 수 없다.==
+	- 😍localStrage에는 text만 저장할 수 있다.
+- saveToDos()라는 함수를 생성, localStorage에 setItem()으로 toDos를 저장.
 
 
 
