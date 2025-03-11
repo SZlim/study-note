@@ -260,7 +260,11 @@
 	- forEach()를 사용하기 위해 함수를 만들어도 되지만, 숏컷도 존재(😍"=>"(arrow fucntion,화살표 함수)로 대체 가능.)
 		- ex)parsedToDos.forEach(<u>(item) => console.log("this is the turn of", item)</u>);
 		- function을 작성할 때 더 짧게 쓰는 방법.
-- 
+- toDos(변수명)의 array가 비워져 있어, 새로운 todo를 추가하고 새로 고침하면, 이전의 todo가 비워지는 문제가 발생
+	- 😍즉, newToo만 toDos array에 저장해, localStorage에 저장하고 있어서 문제가 발생함.
+	- 이유, toDos =[]; (null 상태)이기 때문,
+	- 해결방법, toDos를 업데이트 가능한 let 변수로 만들고, toDos를 parsedToDos를 통해서 복원,(이전의 toDo는 localStorage에 저장되어 있기 때문,)
+		- [참고, comment](https://nomadcoders.co/javascript-for-beginners/lectures/2919/comments/85447) 노마드코더 댓글, 이해
 
 
 
