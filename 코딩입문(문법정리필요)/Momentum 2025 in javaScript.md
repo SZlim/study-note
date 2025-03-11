@@ -227,7 +227,7 @@
 		- 😭event는 많은 정보가 있기에, evnet.target을 살펴봐야 한다.(?)
 		- 🤩li변수를 만들어 target을 parentElement(즉, li)해, li.remove();로 ToDo목록을 지울 수 있다.
 
-#### Saving ToDos
+#### Saving ToDos part
 
 - 브라우저에 input을 저장하는 방법
 	- ==localStorage()==
@@ -235,8 +235,22 @@
 	- newToDo를 그리기 전에 toDos array를 가지고 와서 newToDo에 push
 	- push()
 - ==단, localStorage에는 array를 저장할 수 없다.==
-	- 😍localStrage에는 text만 저장할 수 있다.
+	- 😍localStorage에는 text만 저장할 수 있다.
 - saveToDos()라는 함수를 생성, localStorage에 setItem()으로 toDos를 저장.
+	- 문제점 - localStorage에 저장은 되나 새로고침하면 toDos의 input목록이 화면에서 사라짐.
+	- 문제점 - 새로운 input을 줄 경우, 기존의 localStorage값들이 사라짐.
+- 해결방법 - 단순한 텍스트로 저장되는 것을 array로 저장되게 끔..(?) => string으로 저장되게..
+- ==😎JSON.stringify()==
+	- javaScript의 object, array, 또는 어떤 코드건 간에 ==단순(bording)한 string으로 바꿔준다==.
+	- 😍localStorage의 정보를 load하는 것과 연관이 있어서 중요함.
+- ==😎JSON.parse()==
+	- array를 단순한 string으로 변경가능.
+	- 단, ==javaScript가 이해할 수 있는(alive한) String으로 만들어 준다.==
+- 😍즉, array를 JSON.stringify()로, 단순한(bording) string array로 만들고, JSON.parse()로, string array를 javaScript가 이해할 수 있는(alive한) String으로 만들어 준다.
+#### Loading toDos Part
+
+- localStorage에 있는 정보가 새로고침 시 화면에 표시되지 않는 문제를 해결..
+- 
 
 
 
