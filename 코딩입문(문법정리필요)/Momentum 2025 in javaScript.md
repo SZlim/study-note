@@ -287,7 +287,15 @@
 	- 삭제할 목록에 적용할 유용한 방법이다.
 
 ##### paintToDo의 작동로직(중요)
-- 
+- forEach()는 paintToDo를 parsedToDos 내 배열의 요소마다 실행함.
+- forEach()는, paintToDo를 기본적으로 실행함.
+	- forEach는 각각의 item을 주는데
+	- 이제는, 이 아이템이 object가 되었음.
+- 😍==array내에 무언가를 delete하는 것을 array에서 지우는 것이 아니라, 지우고 싶은 item을 빼고, 새 array를 만드는 것이다.==
+- ==.filter==
+	- .filter는 filter()함수가 필요하다고 요청.
+- 😎==filter()함수는 반드시 true를 return해야 한다.==, false를 return할 경우, 해당 item은 새 array에서 제외됨.
+	- 😍==javaScript는 filter()함수를 array내 length만큼 호출한다.==
 
 
 
