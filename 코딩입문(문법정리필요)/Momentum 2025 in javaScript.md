@@ -297,9 +297,13 @@
 - 😎==filter()함수는 반드시 true를 return해야 한다.==, false를 return할 경우, 해당 item은 새 array에서 제외됨.
 	- 😍==javaScript는 filter()함수를 array내 length만큼 호출한다.==
 	- 즉 true를 return해야 array내 item을 유지할 수 있다.
+	- 😍삭제할려면 false를 return하면 된다.
 - filter()함수는 호출되는 item을 저장할 공간을 만들어 줘야함
 	- 저장공간의 argument는 무엇이 되든 상관이 없다.
 	- ex) function sexyFilter(item){ return item !== 3};
+- object의 id뿐만 아니라 text도 filter()함수 내에서 return받아, array에서 제외 시킬 수 있다.
+	- ex) return.id !==
+	- return.text !==
 
 
 
