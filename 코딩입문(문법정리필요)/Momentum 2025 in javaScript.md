@@ -265,8 +265,26 @@
 	- 이유, toDos =[]; (null 상태)이기 때문,
 	- 해결방법, toDos를 업데이트 가능한 let 변수로 만들고, toDos를 parsedToDos를 통해서 복원,(이전의 toDo는 localStorage에 저장되어 있기 때문,)
 		- [참고, comment](https://nomadcoders.co/javascript-for-beginners/lectures/2919/comments/85447) 노마드코더 댓글, 로직이해가 필요함.😭
+		  
+#### Deleting To Dos part
 
-
+- todo를 삭제하고 새로고침하면 localStorage의 todo가 비워지지 않는 문제가 발생
+- 각각의 todo에 id를 부여하고, text대신 object로 만들어 어떤 item이 삭제되었는지 알 수 있게함.
+	- ex) [{id: 121212, text:"water"}] 이런 array가 필요함
+- 랜덤 ID 생성 - Date.now()
+	- 😍==Date.now()== - 밀리초(1/1000 초)를 주는 함수
+	- 호출되는 초들이 랜덤하게 보임.
+	- 이 호출된 초를 활용해 랜덤ID를 부여.
+- 생성된(id포함된)object는 
+	- 화면상에 object,object로 표시됨.
+	- ==id를 사용하기 위해, HTML에 두어야 한다.==
+		- 😎paintToDo()함수 내, ==span.innerText = newTodo.text가 되어야 함.==
+			- 제공받는 newTodo는 더이상 text가 아니라 object이기 때문에(text와 id가 포함된object), 해당 object의 text로 정의해 줘야한다. 
+	- id는 각 item을 구분하기 위한 요소이다.
+		- 😎==li 에 li.id = newTodo.id;f를 새롭게 정의해 각 목록마다 id를 부여.==
+- 화면에서 삭제하기 전 deleteToDo()함수로 li 목로도 받지만, id도 받는다.
+	- 😎console.log(li.id);를 실행해 보면, 삭제된 li의 id를 console에서 확인할 수 있다.
+	- 삭제할 목록에 적용할 유용한 방법이다.
 
 
 
