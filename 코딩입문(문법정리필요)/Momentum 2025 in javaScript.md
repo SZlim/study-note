@@ -264,7 +264,7 @@
 	- 😍즉, newToo만 toDos array에 저장해, localStorage에 저장하고 있어서 문제가 발생함.
 	- 이유, toDos =[]; (null 상태)이기 때문,
 	- 해결방법, toDos를 업데이트 가능한 let 변수로 만들고, toDos를 parsedToDos를 통해서 복원,(이전의 toDo는 localStorage에 저장되어 있기 때문,)
-		- [참고, comment](https://nomadcoders.co/javascript-for-beginners/lectures/2919/comments/85447) 노마드코더 댓글, 이해
+		- [참고, comment](https://nomadcoders.co/javascript-for-beginners/lectures/2919/comments/85447) 노마드코더 댓글, 로직이해가 필요함.😭
 
 
 
