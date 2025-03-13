@@ -313,9 +313,14 @@
 	- 😍중요, toDos DB에서 todo를 지운 뒤, ==saveToDos()를 다시 한번 호출해야== 정상작동이 된다.
 
 ### Weather part
-
+브라우저에 기본으로 내장되어 있는 함수를 이용해 위치한 곳의 날씨를 얻는다.
 #### geolocation
-- 
+
+- navicato() - wifi, 위치, gps 등등의 정보를 얻을 수 있다.
+- navicator.geolocation.getCurrentPosition()
+	- getCurrnetPositon()은 2개의 argument가 필요함.
+		- 잘 실행되었을 때의 함수
+		- 에러가 발생되었을 때의 함수
 
 
 
