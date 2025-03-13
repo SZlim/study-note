@@ -348,6 +348,10 @@
 - 😎==HTML에 새로운 div를, div안에 두개의 span을 만들어 도시이름과 날씨를 넣을 공간을 마련해 준다.(div는 id를 부여함)==
 	- document.querySelector로 div의 첫 span을 weatherContainer로 사용하고, 두번째 span은 cityContainer로 사용함
 - 😍innerText로 각 span에 response한 정보를 각각 부여함.
+- 온도는 
+	- ex) weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+	- 기존 response를 백틱으로 감싼뒤 두 data를 연결해 주었다.
+	- 😍==늘 코드를 덜 적는 방법을 고민해야함.==
 
 
 
