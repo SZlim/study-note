@@ -315,12 +315,17 @@
 ### Weather part
 브라우저에 기본으로 내장되어 있는 함수를 이용해 위치한 곳의 날씨를 얻는다.
 #### geolocation
+[mdn문서 참고](https://developer.mozilla.org/ko/docs/Web/API/Geolocation/getCurrentPosition)
 
 - navicato() - wifi, 위치, gps 등등의 정보를 얻을 수 있다.
 - navicator.geolocation.getCurrentPosition()
+	- getCurrnetPositon()는 장치의 현재 위치를 가져옴.(위도/경도)
 	- getCurrnetPositon()은 2개의 argument가 필요함.
-		- 잘 실행되었을 때의 함수
-		- 에러가 발생되었을 때의 함수
+		- success 매개변수 함수, 
+		- error 매개변수 함수, 
+- API활용 (다른 서버와 대화할 수 있는 방법이 API의 개념.)
+	- https://openweathermap.org/ 의 api를 이용
+	- Current Weather Data API를 사용.
 
 
 
