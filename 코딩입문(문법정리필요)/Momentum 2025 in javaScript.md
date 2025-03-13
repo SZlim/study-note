@@ -301,9 +301,12 @@
 - filter()함수는 호출되는 item을 저장할 공간을 만들어 줘야함
 	- 저장공간의 argument는 무엇이 되든 상관이 없다.
 	- ex) function sexyFilter(item){ return item !== 3};
-- object의 id뿐만 아니라 text도 filter()함수 내에서 return받아, array에서 제외 시킬 수 있다.
+- 😍object의 id뿐만 아니라 text도 filter()함수 내에서 return받아, array에서 제외 시킬 수 있다.
 	- ex) return.id !==
 	- return.text !==
+- filter function 
+	- id가 있는 todo를 지우기 위해서는 filter function이 새 array를 주는 걸 기억하는 것이 중요함.
+	- 
 
 
 
