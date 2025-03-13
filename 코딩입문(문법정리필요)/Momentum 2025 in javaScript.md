@@ -306,7 +306,12 @@
 	- return.text !==
 - filter function 
 	- id가 있는 todo를 지우기 위해서는 filter function이 새 array를 주는 걸 기억하는 것이 중요함.
-	- 
+	- toDo는 toDos DB에 있는 요소 중 하나를 뜻함.
+	- 즉, 클릭한(삭제버튼) li.id와 다른 toDo를 남겨두기 위해 코드 추가
+	- 😎==toDo.id는 number타입, li.id는 string타입이다.== 두 타입이 다르므로 지워지지 않는 문제가 발생함.
+		- 😎==parseInt(li.id);함수를 이용해== string을 number로 바꿔준다.
+	- 😍중요, toDos DB에서 todo를 지운 뒤, ==saveToDos()를 다시 한번 호출해야== 정상작동이 된다.
+
 
 
 
